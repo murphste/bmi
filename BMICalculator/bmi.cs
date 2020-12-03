@@ -3,6 +3,7 @@
 
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.Text.RegularExpressions;
 
 namespace BMICalculator
 {
@@ -18,21 +19,29 @@ namespace BMICalculator
         const double PoundsToKgs = 0.453592;
         const double InchestoMetres = 0.0254;
 
+        //Regex onlyNums = new Regex("[^0 - 9] +");
+
+
+        //Unit tests for these
         [Display(Name = "Weight - Stones")]
         [Range(5, 50, ErrorMessage = "Stones must be between 5 and 50")]                              // max 50 stone
         public int WeightStones { get; set; }
+        
 
         [Display(Name = "Pounds")]
         [Range(0, 13, ErrorMessage = "Pounds must be between 0 and 13")]                              // 14 lbs in a stone
         public int WeightPounds { get; set; }
 
+
         [Display(Name = "Height - Feet")]
         [Range(4, 7, ErrorMessage = "Feet must be between 4 and 7")]                               // max 7 feet
         public int HeightFeet { get; set; }
 
+
         [Display(Name = "Inches")]
         [Range(0, 11, ErrorMessage = "Inches must be between 0 and 11")]                              // 12 inches in a foot
         public int HeightInches { get; set; }
+
 
         // calculate BMI, display to 2 decimal places
         [Display(Name = "Your BMI is")]
@@ -64,6 +73,7 @@ namespace BMICalculator
             {
                 double bmi = this.BMIValue;
 
+                // Unit test these if conditions
                 // calculate BMI category based on upper limits
                 if (bmi <= UnderWeightUpperLimit)
                 {
@@ -83,6 +93,8 @@ namespace BMICalculator
                 }
             }
         }
+
+        
     }
 }
 
