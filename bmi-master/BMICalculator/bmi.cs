@@ -25,23 +25,72 @@ namespace BMICalculator
         //Unit tests for these
         [Display(Name = "Weight - Stones")]
         [Range(5, 50, ErrorMessage = "Stones must be between 5 and 50")]                              // max 50 stone
-        public int WeightStones { get; set; }
-        
+        public int WeightStones
+        {
+            get
+            {
+                return WeightStones;
+            }
+            set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentException("Number must be positive");
+                }
+            }
+        }
 
         [Display(Name = "Pounds")]
         [Range(0, 13, ErrorMessage = "Pounds must be between 0 and 13")]                              // 14 lbs in a stone
-        public int WeightPounds { get; set; }
-
+        public int WeightPounds 
+        {
+            get
+            {
+                return WeightPounds;
+            }
+            set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentException("Number must be positive");
+}
+            }
+        }
 
         [Display(Name = "Height - Feet")]
         [Range(4, 7, ErrorMessage = "Feet must be between 4 and 7")]                               // max 7 feet
-        public int HeightFeet { get; set; }
-
+        public int HeightFeet
+        {
+            get
+            {
+                return HeightFeet;
+            }
+            set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentException("Number must be positive");
+                }
+            }
+        }
+        
 
         [Display(Name = "Inches")]
         [Range(0, 11, ErrorMessage = "Inches must be between 0 and 11")]                              // 12 inches in a foot
-        public int HeightInches { get; set; }
-
+        public int HeightInches
+        {
+            get
+            {
+                return HeightInches;
+            }
+            set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentException("Number must be positive");
+                }
+            }
+        }
 
         // calculate BMI, display to 2 decimal places
         [Display(Name = "Your BMI is")]
@@ -93,8 +142,6 @@ namespace BMICalculator
                 }
             }
         }
-
-        
     }
 }
 
