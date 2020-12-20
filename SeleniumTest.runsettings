@@ -2,6 +2,6 @@
 <RunSettings>
   <!-- Parameters used by tests at runtime -->
   <TestRunParameters>
-    <Parameter name="webAppUri" value="https://kanolan-bmi.azurewebsites.net/" />
+    <Parameter name="webAppUri" value="http://bmi-ca3-sm-cd.azurewebsites.net/" />
   </TestRunParameters>
 </RunSettings>
