@@ -8,6 +8,14 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BMITests", "BMITests\BMITests.csproj", "{086DA1E1-509C-4BAB-8AF1-3FC57BA7CEC0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserAcceptanceTests", "UserAcceptanceTests\UserAcceptanceTests.csproj", "{F398E5FD-E24B-4AD8-A658-9FD266FEBDCB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C03AECFD-4B9F-41AC-8D8E-D357D51A4095} = {C03AECFD-4B9F-41AC-8D8E-D357D51A4095}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{19D99ED4-82CA-4328-8EBE-046318EC21FF}"
+	ProjectSection(SolutionItems) = preProject
+		SeleniumTest.runsettings = SeleniumTest.runsettings
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
