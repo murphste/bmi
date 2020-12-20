@@ -63,4 +63,4 @@ steps:
       !**\*TestAdapter.dll
       !**\obj\**
     searchFolder: '$(System.DefaultWorkingDirectory)'
-    runSettingsFile: '$(System.DefaultWorkingDirectory)/BMICalculator/drop/SeleniumTest.runsettings'
+    runSettingsFile: '$(System.DefaultWorkingDirectory)/BMICalculator/drop/SolutionItems/SeleniumTest.runsettings'
