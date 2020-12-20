@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30711.63
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BMICalculator", "BMICalculator\BMICalculator.csproj", "{C03AECFD-4B9F-41AC-8D8E-D357D51A4095}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMITests", "BMITests\BMITests.csproj", "{086DA1E1-509C-4BAB-8AF1-3FC57BA7CEC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BMITests", "BMITests\BMITests.csproj", "{086DA1E1-509C-4BAB-8AF1-3FC57BA7CEC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserAcceptanceTests", "UserAcceptanceTests\UserAcceptanceTests.csproj", "{F398E5FD-E24B-4AD8-A658-9FD266FEBDCB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{086DA1E1-509C-4BAB-8AF1-3FC57BA7CEC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{086DA1E1-509C-4BAB-8AF1-3FC57BA7CEC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{086DA1E1-509C-4BAB-8AF1-3FC57BA7CEC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F398E5FD-E24B-4AD8-A658-9FD266FEBDCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F398E5FD-E24B-4AD8-A658-9FD266FEBDCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F398E5FD-E24B-4AD8-A658-9FD266FEBDCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F398E5FD-E24B-4AD8-A658-9FD266FEBDCB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
